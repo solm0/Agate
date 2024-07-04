@@ -2,7 +2,7 @@
 
 > Please turn on *Settings* > *Appearance* > *Translucent window* !
 
-<img src="./agate_screenshot.png">
+<img width="512" height="288" src="./agate_screenshot.png">
 
 - This is a minimal theme that creates various atmospheres using the overlapping effect of transparent layers.
 - I focused extensively on typography to ensure smooth readability.
