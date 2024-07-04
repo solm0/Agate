@@ -1,4 +1,6 @@
-**Please turn on *Settings* > *Appearance* > *Translucent window* !**
+# Agate
+
+> Please turn on *Settings* > *Appearance* > *Translucent window* !
 
 <img src="./agate_screenshot.png">
 
@@ -8,7 +10,7 @@
 - I focused extensively on typography to ensure smooth readability.
 <img src="./img-02.png">
 
-##### Adjust Color
+#### Adjust Color
 - You can adjust the accent and background colors using this CSS snippet.
 ```css
 body {
