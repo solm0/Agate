@@ -1,6 +1,7 @@
 # Agate
 
-> Please turn on *Settings* > *Appearance* > *Translucent window* !
+> Please turn on *Settings* > *Appearance* > *Translucent window* and restart Obsidian.
+> This theme only supports Light Mode.
 
 <img src="./img-00.png">
 
