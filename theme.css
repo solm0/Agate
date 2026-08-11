@@ -31,7 +31,7 @@
 
 body {
 	/* my custom properties */
-	--accent-color: 55, 0, 255;
+	--accent-color: rgb(55, 0, 255);
 	--light-color: 170, 170, 170;
 	--light-alpha-color: 0;
 
@@ -42,8 +42,8 @@ body {
 	/* foundations */
 	--border-width: 1px;
 
-	--text-selection: rgba(var(--accent-color), 0.2);
-	--text-highlight-bg: rgba(var(--accent-color), 0.2);
+	--text-selection: color-mix(in srgb, var(--accent-color) 20%, transparent);
+	--text-highlight-bg: color-mix(in srgb, var(--accent-color) 20%, transparent);
 
 	--radius-s: 2px;
 	--radius-m: 8px;
@@ -79,7 +79,7 @@ body {
 
 	/* editor */
 	--blockquote-border-thickness: 3px;
-	--blockquote-border-color: rgba(var(--accent-color), 0.6);
+	--blockquote-border-color: color-mix(in srgb, var(--accent-color) 60%, transparent);
 	--blockquote-font-style: italic;
 
 	--callout-border-width: 1px;
@@ -98,7 +98,7 @@ body {
     --code-punctuation: #00b4f0;
     --code-string: #b58900;
     --code-tag: #dc322f;
-    --code-value: rgb(var(--accent-color));
+    --code-value: var(--accent-color);
 	
 	--file-line-width: 630px;
 	--file-folding-offset: 300px;
@@ -134,10 +134,10 @@ body {
 	--inline-title-color: var(--color-base-100);
 	--inline-title-size: 3.5em;
 
-	--link-color: rgb(var(--accent-color));
-	--link-unresolved-color: rgb(var(--accent-color));
-	--link-unresolved-decoration-color: rgb(var(--accent-color));
-	--link-external-color: rgb(var(--accent-color));
+	--link-color: var(--accent-color);
+	--link-unresolved-color: var(--accent-color);
+	--link-unresolved-decoration-color: var(--accent-color);
+	--link-external-color: var(--accent-color);
 
 	--list-indent: 2em;
 	--list-indent-editing: 2em;
@@ -159,8 +159,8 @@ body {
 	--table-last-border-width: 0;
 	--table-row-last-border-width: 0;
 
-	--tag-color: rgb(var(--accent-color));
-	--tag-background:rgba(var(--accent-color), 0.2);
+	--tag-color: var(--accent-color);
+	--tag-background:color-mix(in srgb, var(--accent-color) 20%, transparent);
 
 	/* plugins */
 	--graph-line: var(--line-color);
@@ -238,16 +238,16 @@ small {
 	--callout-color: var(--accent-color);
 }
 .callout[data-callout="abstract"], .callout[data-callout="tip"] {
-	--callout-color: 0, 142, 123;
+	--callout-color: rgb(0, 142, 123);
 }
 .callout[data-callout="success"]{
-	--callout-color: 0, 124, 37;
+	--callout-color: rgb(0, 124, 37);
 }
 .callout[data-callout="question"], .callout[data-callout="warning"] {
-	--callout-color: 149, 92, 0;
+	--callout-color: rgb(149, 92, 0);
 }
 .callout[data-callout="failure"], .callout[data-callout="danger"], .callout[data-callout="bug"] {
-	--callout-color: 149, 0, 0;
+	--callout-color: rgb(149, 0, 0);
 }
 
 .popover {
@@ -298,7 +298,7 @@ small {
 }
 
 .HyperMD-quote, blockquote {
-	background: linear-gradient(to left, #ffffff00 70%, rgba(var(--accent-color), 0.2));
+	background: linear-gradient(to left, #ffffff00 70%, color-mix(in srgb, var(--accent-color) 20%, transparent));
 }
 
 iframe {
